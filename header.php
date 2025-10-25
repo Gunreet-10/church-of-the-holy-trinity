@@ -47,16 +47,17 @@
 												?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
-			<nav id="site-navigation" class="main-navigation" style="background-color: #800080;">
+			<nav id="site-navigation" class="main-navigation">
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'church-of-the-holy-trinity'); ?></button>
 				<?php
 				wp_nav_menu(
 					array(
-						'theme_location' => 'menu-1', // Make sure this matches your registered menu location
+						'theme_location' => 'menu-1',
 						'menu_id'        => 'primary-menu',
 					)
 				);
 				?>
-			</nav>
+			</nav><!-- #site-navigation -->
 			<?php
 			$block_code = '<!-- wp:navigation {"ref":4,"backgroundColor":"vivid-purple"} /-->';
 			echo do_blocks($block_code);
