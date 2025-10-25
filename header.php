@@ -58,5 +58,6 @@
 					)
 				);
 				?>
+				<!-- wp:navigation {"ref":4} /-->
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
