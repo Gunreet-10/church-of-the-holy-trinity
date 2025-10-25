@@ -50,10 +50,10 @@
 			<!-- #site-navigation -->
 			<?php
 			$block_code = '<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"vivid-purple","textColor":"white","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group has-white-color has-vivid-purple-background-color has-text-color has-background has-link-color"><!-- wp:site-logo {"width":105,"shouldSyncIcon":true,"className":"is-style-rounded","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
+			<div class="wp-block-group has-white-color has-vivid-purple-background-color has-text-color has-background has-link-color"><!-- wp:site-logo {"width":105,"shouldSyncIcon":true,"className":"is-style-rounded","style":{"layout":{"selfStretch":"fit","flexSize":null}}} /-->
 
-<!-- wp:navigation {"ref":4,"layout":{"type":"flex","justifyContent":"left"}} /--></div>
-<!-- /wp:group -->';
+			<!-- wp:navigation {"ref":4,"layout":{"type":"flex","justifyContent":"left"}} /--></div>
+			<!-- /wp:group -->';
 			echo do_blocks($block_code);
 			?>
 
