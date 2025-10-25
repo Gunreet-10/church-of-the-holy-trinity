@@ -57,6 +57,11 @@
 				);
 				?>
 			</nav>
+			<?php
+			$block_code = '<!-- wp:navigation {"ref":4,"backgroundColor":"vivid-purple"} /-->';
+			echo do_blocks($block_code);
+			?>
+
 
 
 		</header><!-- #masthead -->
