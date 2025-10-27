@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "primary", "color": "#007639", "name": "Dark Green" },
+        { "slug": "secondary", "color": "#FCBF16", "name": "Gold Yellow" },
+        { "slug": "white", "color": "#ffffff", "name": "White" },
+        { "slug": "black", "color": "#000000", "name": "Black" },
+        { "slug": "off-white", "color": "#F4FAF6", "name": "Off White" },
+        { "slug": "burgundy", "color": "#6D2E46", "name": "Burgundy" }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "slug": "merriweather",
+          "fontFamily": "'Merriweather', serif",
+          "name": "Merriweather - H1"
+        },
+        {
+          "slug": "playfair",
+          "fontFamily": "'Playfair Display', serif",
+          "name": "Playfair Display - H2-H5"
+        },
+        {
+          "slug": "inter",
+          "fontFamily": "'Inter', sans-serif",
+          "name": "Inter - Body Text"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small", "size": "14px", "name": "Small" },
+        { "slug": "medium", "size": "18px", "name": "Medium" },
+        { "slug": "large", "size": "24px", "name": "Large" }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--white)",
+      "text": "var(--wp--preset--color--black)"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--inter)"
+    }
+  }
+}
