@@ -176,3 +176,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+function church_theme_setup() {
+	add_theme_support( 'editor-styles' );
+	add_editor_style( 'editor-style.css' );
+	add_theme_support( 'wp-block-styles' );
+	add_theme_support( 'align-wide' );
+	add_theme_support( 'responsive-embeds' );
+	add_theme_support( 'appearance-tools' );
+}
+add_action( 'after_setup_theme', 'church_theme_setup' );
