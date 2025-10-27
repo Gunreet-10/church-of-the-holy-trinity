@@ -28,7 +28,7 @@
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'church-of-the-holy-trinity'); ?></a>
 
 		<header id="masthead" class="site-header">
-			<div class="site-branding">
+			
 				<?php
 				the_custom_logo();
 				if (is_front_page() && is_home()) :
@@ -46,7 +46,7 @@
 					<p class="site-description"><?php echo $church_of_the_holy_trinity_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
 												?></p>
 				<?php endif; ?>
-			</div><!-- .site-branding -->
+			<!-- .site-branding -->
 			<!-- #site-navigation -->
 			<?php
 			$block_code = '<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"backgroundColor":"vivid-purple","textColor":"white","layout":{"type":"flex","flexWrap":"nowrap"}} -->
