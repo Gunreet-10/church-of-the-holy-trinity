@@ -1,0 +1,12 @@
+body {
+  font-family: var(--wp--preset--font-family--sans);
+  color: var(--wp--preset--color--dark);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--wp--preset--color--primary);
+  text-decoration: none;
+}

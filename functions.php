@@ -176,12 +176,29 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-function church_theme_setup() {
+
+function cotht_theme_setup() {
+	// Core Underscores supports
+	add_theme_support( 'title-tag' );
+	add_theme_support( 'post-thumbnails' );
+
+	// Block editor support
+	add_theme_support( 'wp-block-styles' );       // Enables core block styles
+	add_theme_support( 'responsive-embeds' );     // Responsive embeds
+	add_theme_support( 'align-wide' );            // Allow wide/full align blocks
+	add_theme_support( 'custom-spacing' );        // Enables spacing controls
+	add_theme_support( 'custom-line-height' );    // Enables line height controls
+	add_theme_support( 'appearance-tools' );      // Enables advanced design tools
+
+	// Editor styles (optional but recommended)
 	add_theme_support( 'editor-styles' );
-	add_editor_style( 'editor-style.css' );
-	add_theme_support( 'wp-block-styles' );
-	add_theme_support( 'align-wide' );
-	add_theme_support( 'responsive-embeds' );
-	add_theme_support( 'appearance-tools' );
+	add_editor_style( 'editor-style.css' );       // Create this file to style editor content
 }
-add_action( 'after_setup_theme', 'church_theme_setup' );
+add_action( 'after_setup_theme', 'cotht_theme_setup' );
+
+
+function cotht_enqueue_styles() {
+	wp_enqueue_style( 'cotht-style', get_stylesheet_uri(), [], wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'wp-block-library' ); // Include default block styles
+}
+add_action( 'wp_enqueue_scripts', 'cotht_enqueue_styles' );
