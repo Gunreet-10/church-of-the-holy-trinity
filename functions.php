@@ -90,15 +90,15 @@ function church_of_the_holy_trinity_setup() {
 	 *
 	 * @link https://codex.wordpress.org/Theme_Logo
 	 */
-/* 	add_theme_support(
+	add_theme_support(
 		'custom-logo',
 		array(
 			'height'      => 250,
 			'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
-		) */
-	
+		)
+	);
 }
 add_action( 'after_setup_theme', 'church_of_the_holy_trinity_setup' );
 
@@ -152,7 +152,7 @@ add_action( 'wp_enqueue_scripts', 'church_of_the_holy_trinity_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+//require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -197,8 +197,3 @@ function cotht_theme_setup() {
 add_action( 'after_setup_theme', 'cotht_theme_setup' );
 
 
-function cotht_enqueue_styles() {
-	wp_enqueue_style( 'cotht-style', get_stylesheet_uri(), [], wp_get_theme()->get( 'Version' ) );
-	wp_enqueue_style( 'wp-block-library' ); // Include default block styles
-}
-add_action( 'wp_enqueue_scripts', 'cotht_enqueue_styles' );
